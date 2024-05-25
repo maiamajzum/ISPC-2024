@@ -4,11 +4,11 @@
 #El pintor cobra un monto fijo por metro cuadrado.
 #Se requiere conocer el costo de mano de obra.
 
-longitud = int (input ('Ingrese la longitud de la pared en metros: '))
-altura = int (input ('Ingrese la altura en metros: '))
+ancho = int (input ('Ingrese el ancho de la pared en metros: '))
+alto = int (input ('Ingrese el alto en metros: '))
 costo =  int (input ('Ingrese el costo de mano de obra por metro cuadrado en pesos: '))
 
-area = longitud*altura
+area = ancho*alto
 manodeobra= costo*area
 print('Usted debe pintar una pared de ',area, ' metros cuadrados')
 print('El costo de mano de obra sera de ',manodeobra, 'pesos')
