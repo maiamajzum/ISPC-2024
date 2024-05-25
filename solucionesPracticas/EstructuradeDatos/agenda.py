@@ -1,7 +1,7 @@
 personas = {}
 
 def mostrar_menu():
-    print("Ingrese el número de la opción deseada")
+    print("MENU")
     print("1. Agregar persona")
     print("2. Modificar persona")
     print("3. Eliminar persona")
