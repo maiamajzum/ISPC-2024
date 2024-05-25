@@ -6,10 +6,10 @@
 #5 Salir
 
 
-personas = {}
+agenda = {}
 
 def mostrar_menu():
-    print("MENU")
+    print("Ingrese el número de la opción deseada")
     print("1. Agregar persona")
     print("2. Modificar persona")
     print("3. Eliminar persona")
@@ -22,18 +22,18 @@ def agregar_persona():
     dni = input("Ingrese el DNI: ")
     email = input("Ingrese el email: ")
     telefono = input("Ingrese el número de teléfono: ")
-    personas= {'apellido': apellido, 'nombre': nombre,'DNI':dni, 'email': email, 'telefono': telefono}
+    agenda[dni] = {'apellido': apellido, 'nombre': nombre, 'email': email, 'telefono': telefono}
     print("Persona agregada correctamente.")
 
 def modificar_persona():
     dni = input("Ingrese el DNI de la persona que desea modificar: ")
-    if dni in persona:
+    if dni in agenda:
         print("Persona encontrada:")
-        print(persona[dni])
+        print(agenda[dni])
         opcion = input("¿Qué campo desea modificar? (apellido/nombre/email/telefono): ")
-        if opcion in persona:
+        if opcion in agenda[dni]:
             nuevo_valor = input(f"Ingrese el nuevo valor para {opcion}: ")
-            persona[opcion] = nuevo_valor
+            agenda[dni][opcion] = nuevo_valor
             print("Persona modificada correctamente.")
         else:
             print("Campo no válido.")
@@ -50,7 +50,7 @@ def eliminar_persona():
 
 def mostrar_agenda():
     print("Agenda")
-    for dni in persona.items():
+    for dni, persona in agenda.items():
         print("DNI:", dni)
         print("Apellido:", persona['apellido'])
         print("Nombre:", persona['nombre'])
