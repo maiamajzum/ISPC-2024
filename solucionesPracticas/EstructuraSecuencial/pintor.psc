@@ -1,6 +1,6 @@
 Algoritmo pintor
-	definir long, altura, area, manodeobra Como Entero
-	Escribir 'Ingrese la longitud de la pared en metros:'
+    definir long, altura, area, manodeobra Como Entero
+    Escribir 'Ingrese la longitud de la pared en metros:'
     Leer long
 	Escribir 'Ingrese la altura en metros:'
     Leer altura
@@ -9,5 +9,5 @@ Algoritmo pintor
 	area <- long * altura
 	manodeobra <- costo * area
 	Escribir 'Usted debe pintar una pared de ', area, ' metros cuadrados'
-    Escribir 'El costo de mano de obra será de ', manodeobra, ' pesos'
+    Escribir 'El costo de mano de obra serÃ¡ de ', manodeobra, ' pesos'
 FinAlgoritmo
