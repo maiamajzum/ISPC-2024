@@ -1,3 +1,11 @@
+#Desaroollar un modulo que gestione una agenda teefonica en un diccionario. Mostrar un menu de opciones:
+#1 Agregar una persona (apellido, nombre, dni, email y número de teléfono)
+#2 Modificar una persona dado su DNI
+#3 Eliminar una persona segun su DNI
+#4 Mostrar toda la agenda
+#5 Salir
+
+
 personas = {}
 
 def mostrar_menu():
